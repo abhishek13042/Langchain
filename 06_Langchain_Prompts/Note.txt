@@ -1,0 +1,50 @@
+Prompts are the input instructions or queries given to model to guide its output.
+Prompts are of two types..
+ a. Text base promtps 
+ b. Multimodal prompts (Can sent the all types of things images audio and use it as promtps  )
+
+ Most of the cases 95 percent use of prompts are there
+   Prompts are highly important in order to best utilize the potential of the LLms 
+   We will study these in more details in the prompt engineering paid code 
+
+Right now :
+    We are using it :
+    model.invoke("")
+But in real life the user will give the the prompts 
+
+Static Promtps are not mostly used Because when u give 
+user to write the static promtps u are giving alot of 
+control to users as LLms are very sensitive to promtps.
+So changes to mistakes are very high.
+
+We have to try to provide the consistent user experiedn to all the users of our projects 
+
+// Ideally we should use a template:
+    Please summarize the research paper titled "{paper_input}" with the following specifications:
+
+1. Explanation Style: {style_input}
+2. Explanation Length: {length_input}
+
+3. Mathematical Details:
+   - Include the relevant mathematical equations if present in the paper.
+   - Explain the mathematical concepts using simple, intuitive code snippets where applicable.
+
+4. Analogies:
+   - Use relatable analogies to simplify complex ideas.
+
+5. If certain information is not available in the paper, respond with
+   "Insufficient information available" instead of guessing.
+
+Ensure the summary is clear, accurate, and aligned with the provided style and length.
+
+#Now what we will do instead of asking promtps  we will be askinf three values from the user 
+1. Which paper
+2. Math heavy or code heavy 
+3. Length 
+
+Dynamic Prompt Template :
+    Why we dont use fstrings isntead of the this pormpt tempalte
+     because both works same.
+     1. Default validation (of place holder aare nto filled then it will show the errror works also if u added extra added)  
+     2. Reusable
+     3. Langchain Ecosytem instead of multple invoke use chain in order do all at once

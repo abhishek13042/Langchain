@@ -1,0 +1,23 @@
+#LangChain Core
+langchain 
+langchain-Core
+
+langchain-openai
+openai
+
+langchain-anthropic
+
+langchain-google-genai
+google-generativeai
+
+langchain-huggingface
+transformers 
+huggingface-hub
+
+python-dotenv
+
+numpy 
+scikit-learn
+
+
+https://iiitn.samarth.edu.in/index.php/site/login
