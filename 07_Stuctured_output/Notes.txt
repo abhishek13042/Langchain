@@ -1,0 +1,40 @@
+In langchain structured output refers to teh practice of 
+having language in a well defined data foramt (for example json)
+rather than free form text this make model output paerder and work with programatically.
+
+There are many use cases :
+    Data Extraction (name class 10 marks 12th marks from resume  )
+    API buidling(Product reviews code will read the revei and generate the key things )
+    Agents(Agents are chatbot on steriods agents require tool in order to complete the works 
+    u can store pros cons sentiment in a structured output)
+
+Its poweful technique in order to connect to different system like database and api this is main benfit of using 
+
+There are two type of llm :
+  1.They can own generate structured outpu.
+  2.They cant generate their own strcutured output.
+
+With_strucutred_output(Type 1)
+We will use output parser(Type 2)
+  There are three diff types of structured output:
+    1. Typed Dictionary (Dictionary is generated using class so it tell what to input type but there no validation )
+    2. Pydantic 
+    3. Json 
+
+Reviews ---> LLM---->dicitony me summary and sentiment will be there 
+
+#02
+ when we run this code there is generated a system promtp which exucute this witht the best accuracy 
+
+#03 
+Sometimes what will happeen that the model dont get to understand in one word so we will use annotations.
+
+#04
+When u have to vlaidate the data whihc is coming then you have to use the pydantic.
+Pydantic is a data validation and data parsing library for Python. It ensures that the data you work with is correct, structured, and type-safe.Basic example ✔Default valuesOptional fieldsCoerce $\longrightarrow$Builtin validationField Function $\rightarrow$ default values, constraints, description, regex expressionsReturns pydantic object $\rightarrow$ convert to json/dict 
+
+#05 
+Json is used when  there is no constant strucutue of the data then we use the json schema.
+
+There is two methods in the 
+    
